@@ -1,0 +1,33 @@
+<div>
+    <h1 class="text-center">Employee Activity Details</h1>
+    <br />
+    <table class="table table-bordered main-table">
+    <thead class="thead-dark">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email Address</th>
+        <th>Activity</th>
+        <th class="text-center">Comments</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let activity of activityDetails">
+        <td>{{activity.firstName}}</td>
+        <td>{{activity.lastName}}</td>
+        <td>{{activity.emailAddress}}</td>
+        <td>{{activity.activity}}</td>
+        <td class="text-center">{{activity.comments}}</td>
+      </tr>
+    </tbody>
+    <div *ngIf="detailsMessage" class="panel panel-danger">
+      <div  class="panel-heading">Error</div>
+      <div class="panel-body">{{detailsMessage}}</div>
+    </div>
+    </table>
+    <div class="form-row text-center">
+      <div class="col-12">
+        <button class="btn btn-success" (click)="onBackButtonClick()">Back</button>
+      </div>
+   </div>
+  </div>
