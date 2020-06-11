@@ -1,3 +1,5 @@
+After some struggle was able to resolve the submodule problems. 
+########
 P.S. The UI folder has been added as a submodule. This could have been a side effect of using ng-cli to generate the project.
 # ACME Employee Activities
 
